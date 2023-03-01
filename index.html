@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Ubixo.com</title>
+    <style>
+        body {
+            background-image: url(img/bg.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="tabela-bixos">
+        <table>
+            <tr>
+                <td>
+                    <img name="1" src="img/1.jpg">
+                </td>
+                <td>
+                    <img name="2" src="img/2.jpg">
+                </td>
+                <td>
+                    <img name="3" src="img/3.jpg">
+                </td>
+                <td>
+                    <img name="4" src="img/4.jpg">
+                </td>
+                <td>
+                    <img name="5" src="img/5.jpg">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img name="6" src="img/6.jpg">
+                </td>
+                <td>
+                    <img name="7" src="img/7.jpg">
+                </td>
+                <td>
+                    <img name="8" src="img/8.jpg">
+                </td>
+                <td>
+                    <img name="9" src="img/9.jpg">
+                </td>
+                <td>
+                    <img name="10" src="img/10.jpg">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img name="11" src="img/11.jpg">
+                </td>
+                <td>
+                    <img name="12" src="img/12.jpg">
+                </td>
+                <td>
+                    <img name="13" src="img/13.jpg">
+                </td>
+                <td>
+                    <img name="14" src="img/14.jpg">
+                </td>
+                <td>
+                    <img name="15" src="img/15.jpg">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img name="16" src="img/16.jpg">
+                </td>
+                <td>
+                    <img name="17" src="img/17.jpg">
+                </td>
+                <td>
+                    <img name="18" src="img/18.jpg">
+                </td>
+                <td>
+                    <img name="19" src="img/19.jpg">
+                </td>
+                <td>
+                    <img name="20" src="img/20.jpg">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img name="21" src="img/21.jpg">
+                </td>
+                <td>
+                    <img name="22" src="img/22.jpg">
+                </td>
+                <td>
+                    <img name="23" src="img/23.jpg">
+                </td>
+                <td>
+                    <img name="24" src="img/24.jpg">
+                </td>
+                <td>
+                    <img name="25" src="img/25.jpg">
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="center"><!--INFORMAÇÕES APOSTA-->
+        <div class="informacoes">
+            <button class="x">X</button>
+            <h1 class="titulo">Informações</h1>
+            <h3>Nome</h3>
+            <input type="text" placeholder="Nome.." id="nome">
+
+            <h3>Telefone</h3>
+            <input type="text" placeholder="Telefone..." id="telefone">
+
+            <div class="img_selecionada">
+                <img id="img_selecionada" name="" src="">
+            </div>
+
+            <h3>Valor da aposta R$</h3>
+            <input type="number" placeholder="Sua aposta.." id="valor">
+            <div>
+                <button id="aposta">APOSTAR</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="center"><!--INFORMAÇÕES CLIENTE-->
+        <div class="informacoesCliente">
+            <button class="x2">X</button>
+            <div class="info">
+                <h1>Nome</h1>
+                <h2 id="nomeCliente"></h2>
+            </div>
+
+            <div class="info">
+                <h1>Telefone</h1>
+                <h2 id="telCliente"></h2>
+            </div>
+
+            <img id=bixoCliente src="">
+
+
+            <h1 id="dim" class="info"></h1>
+            <div>
+                <img id="whats" src="img/whatsapp.png">
+                <img id="impressao" src="img/impressao.png" onclick="print()">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="tabela"><!--APOSTAS-->
+        <h1 class="titulo">Apostas</h1>
+
+        <div class="botoes">
+            <a href='./sorteio/index.html' target="_blank">
+                <h2 class="subtitulo2" id="sorteio">Sortear</h2>
+            </a>
+            <h2 class="subtitulo" id="apagar">Apagar lista</h2>
+
+        </div>
+
+        <div class="apostas">
+            <table class="tabela_apostas">
+                <thead class="tr">
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>N° Bixo</th>
+                </thead>
+
+            </table>
+        </div>
+    </section>
+    <footer>
+        Image by <a
+            href="https://www.freepik.com/free-vector/flat-tropical-jungle-background_13643321.htm#query=jungle%20background&position=49&from_view=keyword&track=ais">Freepik</a>
+    </footer>
+
+
+    <script name="" src="js/jquery.js"></script>
+    <script name="" src="js/script.js"></script>
+    <script src='js/mask.js'></script>
+    <script src="js/mascaras.js"></script>
+    <script src="js/whats.js"></script>
+</body>
+
+</html>

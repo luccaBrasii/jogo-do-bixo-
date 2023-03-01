@@ -1,0 +1,131 @@
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.botoes button {
+    margin: 20px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 25px;
+    background-image: linear-gradient(#6fdbb0, rgb(3, 78, 3));
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    transition: 0.5s;
+    margin-bottom: -100px;
+    border: 1px solid black;
+}
+
+.botoes button:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.numSorteados {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+
+.numSorteados div {
+    text-align: center;
+    width: 300px;
+    background-color: rgb(3, 78, 3, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50%;
+}
+
+
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    background-color: white;
+
+}
+
+.animation {
+    animation: rotate 2s linear infinite;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    background-color: white;
+}
+
+.face.front {
+    transform: translateZ(50px);
+}
+
+.face.back {
+    transform: rotateX(180deg) translateZ(50px);
+}
+
+.face.top {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.face.bottom {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.face.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.face.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    animation: count 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+    }
+}

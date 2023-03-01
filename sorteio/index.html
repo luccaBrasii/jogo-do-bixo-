@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="../css/styleDados.css">
+    <style>
+        body {
+            background-image: url(bg2.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="center">
+
+        <div class="container">
+            <div class="cube animation">
+                <div class="face front dado1"></div>
+                <div class="face back dado1"></div>
+                <div class="face top dado1"></div>
+                <div class="face bottom dado1"></div>
+                <div class="face left dado1"></div>
+                <div class="face right dado1"></div>
+            </div>
+            <div class="number"></div>
+        </div>
+
+        <div class="container">
+            <div class="cube animation">
+                <div class="face front dado2"></div>
+                <div class="face back dado2"></div>
+                <div class="face top dado2"></div>
+                <div class="face bottom dado2"></div>
+                <div class="face left dado2"></div>
+                <div class="face right dado2"></div>
+            </div>
+            <div class="number"></div>
+        </div>
+
+        <div class="container">
+            <div class="cube animation">
+                <div class="face front dado3"></div>
+                <div class="face back dado3"></div>
+                <div class="face top dado3"></div>
+                <div class="face bottom dado3"></div>
+                <div class="face left dado3"></div>
+                <div class="face right dado3"></div>
+            </div>
+            <div class="number"></div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="numSorteados">
+            <div id="numSorteado-1">
+                <h1 class="titulo-num">Número: <span id='num1'></span></h1><br>
+            </div>
+
+            <div id="numSorteado-2">
+                <h1 class="titulo-num">Número: <span id='num2'></span></h1><br>
+            </div>
+
+            <div id="numSorteado-3">
+                <h1 class="titulo-num">Número: <span id='num3'></span></h1><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="botoes"><!--BOTOES-->
+        <button id="sortear">SORTEAR</button>
+        <button id="comecarSorteio">NOVO SORTEIO</button>
+    </section>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>
